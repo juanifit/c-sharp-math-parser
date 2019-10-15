@@ -14,8 +14,6 @@ namespace c_sharp_test
             var filename = Path.Combine(Directory.GetCurrentDirectory(), "json.json");
             var jobj = JsonConvert.DeserializeObject<JsonStructure>(File.ReadAllText(filename));
 
-            Console.WriteLine(jobj.inclineScalingFunctions ["minus_1"]);
-
 
             Console.WriteLine("\n\n----TESTING INCLINE SCALING FUNCTIONS----\n\n");
             foreach(KeyValuePair<string, string> entry in jobj.inclineScalingFunctions)
